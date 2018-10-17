@@ -1,6 +1,20 @@
-var text = ['two', 'six', 'four', 'one', 'three'];
-var digits = [2, 6, 4, 1, 3]
-var match = {};
+import React, { Component } from 'react';
 
-text.forEach((letter, i) => match[letter] = digits[i]);
-console.log(match);
+
+class Match extends Component {
+
+    render() {
+        match = (text, digits) => {
+            for (var word of text) {
+                for (var number of digits) {
+                    if (text.indexOf[word] === digits.indexOf[number])
+                        return true
+                }
+                return false
+            }
+        }
+    }
+}
+
+
+export default Match;
